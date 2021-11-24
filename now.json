@@ -1,0 +1,13 @@
+{
+  "name": "educationvideoapi",
+  "alias": ["educationvideo-api"],
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
+  "env": {
+    "DB_USER": "@educationvideoapi-db-user",
+    "DB_PASSWORD": "@educationvideoapi-db-password",
+    "DB_HOST": "@educationvideoapi-db-host",
+    "DB_NAME": "@educationvideoapi-db-name"
+  }
+}
